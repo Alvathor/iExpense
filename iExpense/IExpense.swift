@@ -16,7 +16,7 @@ struct ExpenseItem: Identifiable, Codable {
 }
 
 class Expenses: ObservableObject {
-    @Published var items = [ExpenseItem]() {
+    @Published var items: [ExpenseItem] {
         didSet { encodeObj() }
     }
         
